@@ -205,4 +205,8 @@ public class PostServlet {
 
 [以上详细代码地址](https://github.com/liukaixiong/hand-write-code)
 
->  以上仅供学习练手，如有错误，请指正！共同进步。
+>  仅供学习练手，如有错误，请指正！共同进步。
+
+**案例参考咕泡学院-tom老师的Netty实战**
+[咕泡学院地址](https://www.gupaoedu.com/)
+
