@@ -51,6 +51,7 @@ public class MsgProcessor {
 
         // 如果是聊天
         if (ChatProtocol.CHAT.getName().equals(cmd)) {
+
             for (Channel channel : onlineUserGroup) {
                 boolean isSelf = (channel == client);
                 if (isSelf) {
@@ -80,7 +81,6 @@ public class MsgProcessor {
                     return;
                 }
             }
-
             //正常送花
             for (Channel channel : onlineUserGroup) {
                 if (channel == client) {
