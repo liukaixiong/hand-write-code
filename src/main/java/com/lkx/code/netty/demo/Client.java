@@ -34,7 +34,7 @@ public class Client {
                     }
                 });
 
-        ChannelFuture cf = b.connect("127.0.0.1", 2280).sync();
+        ChannelFuture cf = b.connect("127.0.0.1", 8765).sync();
 
         for (int i = 0; i < 100; i++) {
             cf.channel().writeAndFlush(Unpooled.wrappedBuffer((i + "$_").getBytes()));

@@ -1,4 +1,4 @@
-package com.lkx.code.netty.buffer;
+package com.lkx.code.netty.api.buffer;
 
 import java.nio.IntBuffer;
 
