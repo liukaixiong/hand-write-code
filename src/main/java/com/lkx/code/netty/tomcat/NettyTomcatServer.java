@@ -94,7 +94,7 @@ public class NettyTomcatServer {
                             client.pipeline().addLast(new DispatchServletHandler(servletFactory));
                         }
                     });
-            ChannelFuture channelFuture = server.bind(port).sync();
+            ChannelFuture channelFuture = (ChannelFuture) server.bind(port).sync();
             logger.info(" tomcat 已经启动了 , 端口 : " + port);
             channelFuture.channel().closeFuture().sync();
         } catch (Exception e) {

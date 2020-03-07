@@ -65,7 +65,7 @@ public class ChatServer {
                         }
                     });
 
-            ChannelFuture future = server.bind(port).sync();
+            ChannelFuture future = (ChannelFuture) server.bind(port).sync();
             logger.info(" 聊天服务器已经启动，端口 ： " + port);
             future.channel().closeFuture().sync();
         } catch (InterruptedException e) {
@@ -76,6 +76,7 @@ public class ChatServer {
     public static void main(String[] args) {
         ChatServer chatServer = new ChatServer();
         chatServer.startServer();
+        System.out.println("启动我完成");
     }
 
 }
