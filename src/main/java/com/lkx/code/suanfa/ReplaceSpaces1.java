@@ -51,9 +51,11 @@ public class ReplaceSpaces1 {
     }
 
     public static void main(String[] args) {
+        // %20a%20b%20%20c%20%20
         StringBuffer sb = new StringBuffer(" a b  c  ");
-        System.out.println(replace(sb));
-        ;
+//        System.out.println(replace(sb));
+
+        System.out.println(sb.toString().replaceAll(" ", "%20"));
     }
 
 
