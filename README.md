@@ -7,3 +7,6 @@
 
 
 以上案例
+
+## 工具类
+- com.lkx.code.utils.Deploy : 将指定文件夹下面的jar包导入maven私服库中.
