@@ -46,4 +46,14 @@ public class ThreadProcessTest {
     }
 
 
+    @Test
+    public void hashTest() {
+        String val = "h";
+        // 0000 0010 0010 1100 0001 1111 1000 1000
+        System.out.println(Integer.toBinaryString("郭德纲".hashCode()));
+        System.out.println(Integer.toBinaryString("郭德纲".hashCode() >>> 16));
+        System.out.println(Integer.toBinaryString("彭于晏".hashCode()));
+        System.out.println(Integer.toBinaryString(15));
+    }
+
 }
