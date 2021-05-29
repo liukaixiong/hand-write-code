@@ -1,5 +1,9 @@
 package com.lkx.code.jdk.threads;
 
+import io.netty.util.concurrent.DefaultThreadFactory;
+
+import java.util.concurrent.*;
+
 /**
  * @Module TODO
  * @Description TODO
@@ -8,5 +12,13 @@ package com.lkx.code.jdk.threads;
  */
 public class ThreadProcess {
 
+    public static void main(String[] args) {
+        ThreadPoolExecutor threadPoolExecutor =
+            new ThreadPoolExecutor(1, 10, 0L, TimeUnit.MILLISECONDS, new LinkedBlockingQueue<Runnable>());
+
+        threadPoolExecutor.execute(()->{
+            System.out.println("");
+        });
+    }
 
 }
