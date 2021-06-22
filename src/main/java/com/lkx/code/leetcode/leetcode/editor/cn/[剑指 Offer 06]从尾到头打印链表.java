@@ -16,6 +16,8 @@ package com.lkx.code.leetcode.leetcode.editor.cn;
 // Related Topics 链表
 // 👍 135 👎 0
 
+import com.lkx.code.leetcode.ListNode;
+
 import java.io.Serializable;
 import java.util.Stack;
 
@@ -26,10 +28,6 @@ class CongWeiDaoTouDaYinLianBiaoLcof {
         // TO TEST
     }
 
-    // leetcode submit region begin(Prohibit modification and deletion)
-    /**
-     * Definition for singly-linked list. public class ListNode { int val; ListNode next; ListNode(int x) { val = x; } }
-     */
     class Solution {
 
         public int[] reversePrint(ListNode head) {
